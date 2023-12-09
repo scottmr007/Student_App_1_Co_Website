@@ -16,7 +16,7 @@ Topic {option}
 {raw_message}
 """
 
-    button = st.form_submit("Submit")
+    button = st.form_submit_button("Submit")
     if button:
         send_email(message)
         st.info("Your email was successfully sent.")
